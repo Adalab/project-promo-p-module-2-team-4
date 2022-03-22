@@ -1,17 +1,61 @@
-<section>
-  <button>FontAwesome Reset</button>
-
+<section class="preview">
   <article>
-    <h2>Nombre Apellidos</h2>
-    <p>Front-end developer</p>
-    <img src="" alt="" />
-    <nav>
-      <ul>
-        <li><a href="">Móvil</a></li>
-        <li><a href="">E-mail</a></li>
-        <li><a href="">LinkedIn</a></li>
-        <li><a href="">GitHub</a></li>
-      </ul>
-    </nav>
+    <!--Parte silver-->
+    <button class="card__reset" href="">
+      <i class="far fa-trash-alt"></i>Reset
+    </button>
+
+    <div class="card">
+      <!--Parte blanca-->
+      <div class="card__info">
+        <!--Datos personales-->
+        <h2 class="card__name">Nombre Apellidos</h2>
+        <p class="card__description">Front-end developer</p>
+      </div>
+
+      <div class="card__image">Imagen</div>
+      <!--Div en vez de img porque la añadiré con css-->
+
+      <nav class="card__menu">
+        <ul class="card__socialMedia">
+          <li class="socialMedia__icon">
+            <a
+              class="socialMedia__icon--link"
+              href=""
+              target="_blank"
+              title="Phone number"
+              ><i class="icon fas fa-mobile-alt"></i>
+            </a>
+          </li>
+          <li class="socialMedia__icon">
+            <a
+              class="socialMedia__icon--link"
+              href=""
+              target="_blank"
+              title="E-mail address"
+              ><i class="icon far fa-envelope"></i>
+            </a>
+          </li>
+          <li class="socialMedia__icon">
+            <a
+              class="socialMedia__icon--link"
+              href=""
+              target="_blank"
+              title="LinkedIn"
+              ><i class="icon fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="socialMedia__icon">
+            <a
+              class="socialMedia__icon--link"
+              href=""
+              target="_blank"
+              title="GitHub"
+              ><i class="icon fab fa-github-alt"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </article>
 </section>

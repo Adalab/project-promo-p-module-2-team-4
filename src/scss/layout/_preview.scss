@@ -1,0 +1,47 @@
+.preview {
+  background: linear-gradient(to bottom, $colorSilver, $colorPaleGrey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 457px;
+}
+
+.card__reset {
+  height: 30px;
+  margin: 0 165px 20px 0;
+  padding: 4px 12px 5px 10px;
+  border-radius: 15px;
+  border: solid 1px $colorGunmetal; //Color temporal para ver mejor
+  background-color: transparent;
+  color: $colorGunmetal;
+  font-family: $fontMain;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.card {
+  width: 240px;
+  height: 329px;
+  margin: 20px 0 0;
+  padding: 21px 0 12px;
+  border-radius: 2px;
+  background-color: $colorWhite;
+  // box-shadow: ;
+}
+
+.card__info {
+  font-family: $fontTitle;
+  border-left: solid 5px $colorDirtyBlue;
+  padding: 0 20px 0 15px;
+}
+
+.card__name {
+  color: $colorDarkGreenBlue;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card__description {
+  color: $colorGunmetal;
+  font-size: 16px;
+}
