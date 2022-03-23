@@ -1,50 +1,70 @@
-.container-design {
+.containerDesign {
   display: flex;
+  margin-left: 39px;
 
-  &__options {
-    display: flex;
-    flex-direction: column;
-
-    // &__palette {
-    //   display: flex;
-    //   flex-direction: row;
-    // }
+  &__title {
+    flex-grow: 0.9;
+    text-transform: uppercase;
+    font-family: $fontMain;
+    font-size: 14px;
+    color: $colorGunmetal;
   }
 }
 
 .options__palette {
   display: flex;
   flex-direction: row;
-}
+  align-items: center;
+  padding-bottom: 20px;
 
-.palette__sample1 {
-  // width: 30px;
-  //   height: 25px;
-  //   background-color: red;
+  // ¿cómo puedo separar el radio de la palette?
 
-  &--red {
-    width: 30px;
-    height: 25px;
-    background-color: red;
-  }
-  .palette__sample2 {
-    display: flex;
-    flex-direction: row;
-
-    &--blue {
+  .palette__sample {
+    &--1 {
       width: 30px;
       height: 25px;
-      background-color: blue;
+      background-color: $colorDarkGreenBlue;
     }
-  }
-  .palette__sample3 {
-    display: flex;
-    flex-direction: row;
-    
-    &--yellow {
+    &--2 {
       width: 30px;
       height: 25px;
-      background-color: yellow;
+      background-color: $colorDirtyBlue;
+    }
+
+    &--3 {
+      width: 30px;
+      height: 25px;
+      background-color: $colorHospitalGreen;
+    }
+    &--4 {
+      width: 30px;
+      height: 25px;
+      background-color: $colorDriedBlood;
+    }
+    &--5 {
+      width: 30px;
+      height: 25px;
+      background-color: $colorRustyRed;
+    }
+    &--6 {
+      width: 30px;
+      height: 25px;
+      background-color: $colorTomato;
+    }
+    &--7 {
+      width: 30px;
+      height: 25px;
+      background-color: $colorSlate;
+    }
+    &--8 {
+      width: 30px;
+      height: 25px;
+      background-color: $colorFadedOrange;
+    }
+    &--9 {
+      width: 30px;
+      height: 25px;
+      background-color: $colorLightGreyBlue;
     }
   }
 }
