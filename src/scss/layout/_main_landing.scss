@@ -55,13 +55,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: ;
+}
+
+.landing__link1--obejct {
+  width: 32px;
+  height: 26px;
+  color: $colorDullOrange;
 }
 
 .landing__title--links {
   width: 60px;
   height: 22px;
-  margin: 19px 0 0;
   font-family: $fontMain;
+  margin: ;
   font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
