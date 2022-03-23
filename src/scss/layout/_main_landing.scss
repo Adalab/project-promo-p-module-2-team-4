@@ -1,0 +1,95 @@
+.mainLanding {
+  background-color: $colorWhiteFour;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+
+.landing__img1 {
+  width: 250px;
+  height: 63px;
+}
+
+.landing__title {
+  width: 223px;
+  height: 24px;
+  margin: 35.4px 22.9px 0px 22.1px;
+  font-family: $fontSection;
+  font-size: 19px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $colorDullOrange;
+}
+.landing__text {
+  width: 264.8px;
+  height: 38.4px;
+  margin: 0px 1.6px 17.8px 1.6px;
+  font-family: $fontMain;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $colorDarkGreenBlue;
+}
+
+.landing_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing__link1,
+.landing__link2,
+.landing__link3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing__title--links {
+  width: 60px;
+  height: 22px;
+  margin: 19px 0 0;
+  font-family: $fontMain;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $colorGunmetal;
+}
+
+.landing__button {
+  width: 129px;
+  height: 42px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border-radius: 21px;
+  background-color: $colorDirtyBlue;
+  color: $colorWhite;
+  font-family: $fontMain;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  text-decoration: none;
+}
