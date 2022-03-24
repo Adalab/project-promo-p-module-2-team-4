@@ -13,57 +13,48 @@
 
 .options__palette {
   display: flex;
-  flex-direction: row;
   align-items: center;
   padding-bottom: 20px;
 
+  /*&palette__sample{
+
+  }*/
   // ¿cómo puedo separar el radio de la palette?
 
+  .radio {
+    margin-right: 10px;
+  }
+
+  // ¿aliviar líneas de código con mixins?
+
   .palette__sample {
+    width: 30px;
+    height: 25px;
     &--1 {
-      width: 30px;
-      height: 25px;
       background-color: $colorDarkGreenBlue;
     }
     &--2 {
-      width: 30px;
-      height: 25px;
       background-color: $colorDirtyBlue;
     }
-
     &--3 {
-      width: 30px;
-      height: 25px;
       background-color: $colorHospitalGreen;
     }
     &--4 {
-      width: 30px;
-      height: 25px;
       background-color: $colorDriedBlood;
     }
     &--5 {
-      width: 30px;
-      height: 25px;
       background-color: $colorRustyRed;
     }
     &--6 {
-      width: 30px;
-      height: 25px;
       background-color: $colorTomato;
     }
     &--7 {
-      width: 30px;
-      height: 25px;
       background-color: $colorSlate;
     }
     &--8 {
-      width: 30px;
-      height: 25px;
       background-color: $colorFadedOrange;
     }
     &--9 {
-      width: 30px;
-      height: 25px;
       background-color: $colorLightGreyBlue;
     }
   }
