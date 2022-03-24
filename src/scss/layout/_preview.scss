@@ -21,7 +21,7 @@
     }
   }
 
-  .card__container {
+  .containerCard {
     width: 240px;
     height: 329px;
     margin: 20px 0 0;
@@ -31,22 +31,22 @@
     box-shadow: rgba(0, 0, 0, 0.2) 0 1px 10px 0;
     // ¿Hacer variable de este color?
 
-    .card__info {
+    &__info {
       font-family: $fontTitle;
       border-left: solid 5px $colorDirtyBlue;
       padding: 0 20px 0 15px;
-    }
 
-    .card__name {
-      color: $colorDarkGreenBlue;
-      font-size: 18px;
-      font-weight: bold;
-      text-transform: capitalize;
-    }
+      &__name {
+        color: $colorDarkGreenBlue;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
 
-    .card__description {
-      color: $colorGunmetal;
-      font-size: 16px;
+      &__description {
+        color: $colorGunmetal;
+        font-size: 16px;
+      }
     }
   }
 
@@ -57,12 +57,12 @@
     margin: 10px 0;
   }
 
-  .socialMedia__menu {
+  .socialMediaMenu {
     display: flex;
     flex-direction: row;
     padding: 0 20px 0 20px;
 
-    .socialMedia__icon {
+    &__icon {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -72,7 +72,7 @@
       border-radius: 50%;
       border: solid 2px $colorHospitalGreen;
 
-      &--link {
+      &__link {
         color: $colorDarkGreenBlue;
         padding: 10px;
       }
