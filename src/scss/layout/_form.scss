@@ -1,0 +1,35 @@
+.fieldset {
+  border-bottom: $colorWhiteTwo solid 1px;
+
+  margin: 30px 20px; //provisional
+
+  .legend {
+    width: 100%;
+    margin: 10px 0;
+
+    color: $colorGunmetal;
+    font-size: 18px;
+    font-weight: 600;
+
+    display: flex;
+
+    &__text {
+      margin-left: 8px;
+
+      flex-grow: 1;
+    }
+
+    &__icon {
+      width: 21px;
+      height: 18px;
+
+      font-size: 18px;
+
+      flex-grow: 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

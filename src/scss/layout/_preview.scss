@@ -3,7 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 457px;
+  // height: 457px; Al ponerle el padding para que se centre, la altura
+  padding: 45px;
 
   .card__reset {
     height: 30px;
@@ -29,12 +30,14 @@
     border-radius: 2px;
     background-color: $colorWhite;
     box-shadow: rgba(0, 0, 0, 0.2) 0 1px 10px 0;
-    // ¿Hacer variable de este color?
 
     &__info {
       font-family: $fontTitle;
       border-left: solid 5px $colorDirtyBlue;
       padding: 0 20px 0 15px;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: space-between; Esto lo he escrito en DevTools y no-se-que he hecho pero me permitía darle espacio a los elementos "name" y "description" entre ellos. Sé que he metido esto y algo más, pero se me ha borrado y me he quedado en blanco. El objetivo era reducir el margen inferior (padding 12px) del containerCard, y ha servido, lo juro, pero no sé cómo. CLARA, REVISAR
 
       &__name {
         color: $colorDarkGreenBlue;
@@ -71,11 +74,11 @@
       margin: 0 10px 0 0;
       border-radius: 50%;
       border: solid 2px $colorHospitalGreen;
+    }
 
-      &__link {
-        color: $colorDarkGreenBlue;
-        padding: 10px;
-      }
+    &__link {
+      color: $colorDarkGreenBlue;
+      padding: 10px;
     }
   }
 }

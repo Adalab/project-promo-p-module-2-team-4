@@ -1,0 +1,13 @@
+.mainCreate {
+  background-image: linear-gradient(to bottom, &colorWhiteFour, &colorWhite 9%);
+
+  display: flex;
+  flex-direction: column;
+  //   justify-items: center;
+
+  @media all and (min-width: 768px) {
+    padding: 20px 40px;
+
+    flex-direction: row-reverse;
+  }
+}
