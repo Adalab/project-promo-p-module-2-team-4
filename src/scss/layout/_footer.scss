@@ -1,0 +1,34 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .small_text {
+    margin-top: 20px;
+  }
+}
+.small_text {
+  color: $colorBrownishGrey;
+  opacity: 0.5;
+  margin: 12px 0 12px;
+  font-family: $fontMain;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+}
+
+.img_logo {
+  width: 103px;
+  height: 40px;
+}
