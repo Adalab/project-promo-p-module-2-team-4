@@ -1,0 +1,84 @@
+.preview {
+  background: linear-gradient(to bottom, $colorSilver, $colorPaleGrey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // height: 457px; Al ponerle el padding para que se centre, la altura
+  padding: 45px;
+
+  .card__reset {
+    height: 30px;
+    padding: 5px 12px;
+    border-radius: 15px;
+    border: solid 1px $colorWhite;
+    background-color: transparent;
+    color: $colorGunmetal;
+    font-family: $fontMain;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    .card__icon {
+      margin-right: 8px;
+    }
+  }
+
+  .containerCard {
+    width: 240px;
+    height: 329px;
+    margin: 20px 0 0;
+    padding: 21px 0 12px;
+    border-radius: 2px;
+    background-color: $colorWhite;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 10px 0;
+
+    &__info {
+      font-family: $fontTitle;
+      border-left: solid 5px $colorDirtyBlue;
+      padding: 0 20px 0 15px;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: space-between; Esto lo he escrito en DevTools y no-se-que he hecho pero me permitía darle espacio a los elementos "name" y "description" entre ellos. Sé que he metido esto y algo más, pero se me ha borrado y me he quedado en blanco. El objetivo era reducir el margen inferior (padding 12px) del containerCard, y ha servido, lo juro, pero no sé cómo. CLARA, REVISAR
+
+      &__name {
+        color: $colorDarkGreenBlue;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+
+      &__description {
+        color: $colorGunmetal;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .card__image {
+    background-image: url(../images/profile_card1.png);
+    background-size: cover;
+    height: 200px;
+    margin: 10px 0;
+  }
+
+  .socialMediaMenu {
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px 0 20px;
+
+    &__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      margin: 0 10px 0 0;
+      border-radius: 50%;
+      border: solid 2px $colorHospitalGreen;
+    }
+
+    &__link {
+      color: $colorDarkGreenBlue;
+      padding: 10px;
+    }
+  }
+}
