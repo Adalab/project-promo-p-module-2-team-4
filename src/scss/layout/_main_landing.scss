@@ -41,10 +41,19 @@
   color: $colorDarkGreenBlue;
 }
 
+.containerLanding {
+  width: 268px;
+  height: 73.8px;
+  padding: 15px 20px 9.8px 20px;
+  border-radius: 4px;
+  border: solid 1.6px;
+  color: $colorDullOrange;
+}
+
 .landing_section {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -55,10 +64,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: ;
 }
 
-.landing__link1--obejct {
+.landing__link1--obeject {
   width: 32px;
   height: 26px;
   color: $colorDullOrange;
@@ -68,7 +76,6 @@
   width: 60px;
   height: 22px;
   font-family: $fontMain;
-  margin: ;
   font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
