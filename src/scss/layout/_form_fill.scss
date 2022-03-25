@@ -16,6 +16,13 @@
   height: 30px;
   font-size: 14px;
   border: 1px solid $colorHospitalGreen;
+  padding-left: 10px;
+  color: $colorDarkGreenBlue;
+
+  //dar otro color de borde cuando escribes en el field:
+  // &:focus {
+  //   border: $colorRustyRed;
+  // }
 }
 
 .component {
