@@ -1,9 +1,13 @@
 .containerDesign {
   display: flex;
-  margin-left: 39px;
+  margin: 20px 0 10px 19px;
+
+  @media all and (min-width: 768px) {
+    margin-left: 0;
+  }
 
   &__title {
-    flex-grow: 0.9;
+    flex-grow: 0.95;
     text-transform: uppercase;
     font-family: $fontMain;
     font-size: 14px;
@@ -16,16 +20,9 @@
   align-items: center;
   padding-bottom: 20px;
 
-  /*&palette__sample{
-
-  }*/
-  // ¿cómo puedo separar el radio de la palette?
-
   .radio {
     margin-right: 10px;
   }
-
-  // ¿aliviar líneas de código con mixins?
 
   .palette__sample {
     width: 30px;

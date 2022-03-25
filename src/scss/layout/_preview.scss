@@ -6,6 +6,12 @@
   // height: 457px; Al ponerle el padding para que se centre, la altura
   padding: 45px;
 
+  @media all and (min-width: 768px) {
+    border-radius: 6px;
+
+    flex-grow: 1;
+  }
+
   .card__reset {
     height: 30px;
     padding: 5px 12px;
