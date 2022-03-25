@@ -1,0 +1,61 @@
+.containerDesign {
+  display: flex;
+  margin-left: 39px;
+
+  &__title {
+    flex-grow: 0.9;
+    text-transform: uppercase;
+    font-family: $fontMain;
+    font-size: 14px;
+    color: $colorGunmetal;
+  }
+}
+
+.options__palette {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+
+  /*&palette__sample{
+
+  }*/
+  // ¿cómo puedo separar el radio de la palette?
+
+  .radio {
+    margin-right: 10px;
+  }
+
+  // ¿aliviar líneas de código con mixins?
+
+  .palette__sample {
+    width: 30px;
+    height: 25px;
+    &--1 {
+      background-color: $colorDarkGreenBlue;
+    }
+    &--2 {
+      background-color: $colorDirtyBlue;
+    }
+    &--3 {
+      background-color: $colorHospitalGreen;
+    }
+    &--4 {
+      background-color: $colorDriedBlood;
+    }
+    &--5 {
+      background-color: $colorRustyRed;
+    }
+    &--6 {
+      background-color: $colorTomato;
+    }
+    &--7 {
+      background-color: $colorSlate;
+    }
+    &--8 {
+      background-color: $colorFadedOrange;
+    }
+    &--9 {
+      background-color: $colorLightGreyBlue;
+    }
+  }
+}

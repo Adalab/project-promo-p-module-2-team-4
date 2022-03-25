@@ -1,0 +1,50 @@
+.containerFill {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  color: $colorDarkGreenBlue;
+  font-family: $fontMain;
+  font-size: 14px;
+}
+
+.label {
+  padding-bottom: 10px;
+}
+
+.field {
+  margin-bottom: 20px;
+  height: 30px;
+  font-size: 14px;
+  border: 1px solid $colorHospitalGreen;
+  padding-left: 10px;
+  color: $colorDarkGreenBlue;
+
+  //dar otro color de borde cuando escribes en el field:
+  // &:focus {
+  //   border: $colorRustyRed;
+  // }
+}
+
+.component {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+
+  &__btnAddImage {
+    display: flex;
+    background-color: $colorDullOrange;
+    color: $colorWhite;
+    border-radius: 3px;
+    align-items: center;
+    padding-top: 3px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 7px;
+  }
+
+  &__square {
+    width: 30px;
+    height: 30px;
+    border: 1px solid $colorHospitalGreen;
+  }
+}
