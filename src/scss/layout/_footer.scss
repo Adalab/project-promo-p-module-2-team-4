@@ -3,11 +3,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  @media all and (min-width: 768px) {
+}
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .small_text {
+    margin-top: 20px;
   }
 }
-
 .small_text {
   color: $colorBrownishGrey;
   opacity: 0.5;
