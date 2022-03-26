@@ -3,12 +3,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // height: 457px; Al ponerle el padding para que se centre, la altura
+  // height: 457px; al ponerle el padding para que se centre, la altura no es demasiado diferente en versión móvil y se descuajeringa en las versiones tablet y desktop
   padding: 45px;
 
   @media all and (min-width: 768px) {
     border-radius: 6px;
-
     flex-grow: 1;
   }
 
@@ -41,20 +40,23 @@
       font-family: $fontTitle;
       border-left: solid 5px $colorDirtyBlue;
       padding: 0 20px 0 15px;
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: space-between; Esto lo he escrito en DevTools y no-se-que he hecho pero me permitía darle espacio a los elementos "name" y "description" entre ellos. Sé que he metido esto y algo más, pero se me ha borrado y me he quedado en blanco. El objetivo era reducir el margen inferior (padding 12px) del containerCard, y ha servido, lo juro, pero no sé cómo. CLARA, REVISAR
+      height: 42px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
-      &__name {
+      .info__name {
         color: $colorDarkGreenBlue;
         font-size: 18px;
         font-weight: bold;
         text-transform: capitalize;
+        // line-height: 1.25; No es necesario con el space-between
       }
 
-      &__description {
+      .info__description {
         color: $colorGunmetal;
         font-size: 16px;
+        // line-height: 1.25; No es necesario con el space-between
       }
     }
   }
