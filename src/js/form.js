@@ -1,58 +1,34 @@
 'use strict';
 
-const design = document.querySelector('.js_design');
-/* const fill = document.querySelector('.js_fill');
-const share = document.querySelector('.js_share'); */
+// Constantes DISEÑA
 const designLegend = document.querySelector('.js_designLegend');
-/* const fillLegend = document.querySelector('.js_fillLegend');
-const shareLegend = document.querySelector('.js_shareLegend');
+const design = document.querySelector('.js_design');
 const arrowDesign = document.querySelector('.js_arrowDesign');
+
+// Constantes RELLENA
+const fillLegend = document.querySelector('.js_fillLegend');
+const fill = document.querySelector('.js_fill');
 const arrowFill = document.querySelector('.js_arrowFill');
-const arrowShare = document.querySelector('.js_arrowShare'); */
 
+// Constantes COMPARTE
+const shareLegend = document.querySelector('.js_shareLegend');
+const share = document.querySelector('.js_share');
+const arrowShare = document.querySelector('.js_arrowShare');
 
-function toggleCollapsed() {
-
+// Colapsar DISEÑA
+designLegend.addEventListener('click', () => {
   design.classList.toggle('collapsed');
-  console.log('Holiskiwiskis!');
+  arrowDesign.classList.toggle('rotate');
+});
 
-}
+// Colapsar RELLENA
+fillLegend.addEventListener('click', () => {
+  fill.classList.toggle('collapsed');
+  arrowFill.classList.toggle('rotate');
+});
 
-designLegend.addEventListener('click', toggleCollapsed);
-
-/* function turnArrow(arrowIcon) {
-
-  arrowIcon.classList.toggle('legend__icon--arrowTurn');
-
-}
-
-
-function addCollapsed(section) {
-
-  if (section.classList.contains('collapsed')) {
-
-  console.log('Holis!');
-
-} else {
-
-  section.classList.add('collapsed');
-
-}
-
-}
-
-
-function handleClick(section, section2, section3, arrowIcon) {
-
-  toggleCollapsed(section);
-
-  addCollapsed(section2);
-  addCollapsed(section3);
-
-  turnArrow(arrowIcon);
-
-}
-
-designLegend.addEventListener('click', handleClick(design, fill, share, arrowDesign));
-fillLegend.addEventListener('click', handleClick(fill, design, share, arrowFill));
-shareLegend.addEventListener('click', handleClick(share, fill, design, arrowShare)); */
+// Colapsar COMPARTE
+shareLegend.addEventListener('click', () => {
+  share.classList.toggle('collapsed');
+  arrowShare.classList.toggle('rotate');
+});
