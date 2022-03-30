@@ -93,7 +93,7 @@
 
 //Clases para JS
 
-.paleta1 {
+.palette1 {
   .cardInfo {
     border-left: solid 5px $colorDirtyBlue;
   }
@@ -104,12 +104,12 @@
   .cardMenu__icon {
     border: solid 2px $colorHospitalGreen;
   }
-  //.cardMenu__link {
-  //color: ;
-  //}
+  .cardMenu__link {
+    color: $colorDarkGreenBlue;
+  }
 }
 
-.paleta2 {
+.palette2 {
   .cardInfo {
     border-left: solid 5px $colorRustyRed;
   }
@@ -120,12 +120,12 @@
   .cardMenu__icon {
     border: solid 2px $colorTomato;
   }
-  //.cardMenu__link {
-  //color: ;
-  //}
+  .cardMenu__link {
+    color: $colorDriedBlood;
+  }
 }
 
-.paleta3 {
+.palette3 {
   .cardInfo {
     border-left: solid 5px $colorFadedOrange;
   }
@@ -136,7 +136,7 @@
   .cardMenu__icon {
     border: solid 2px $colorLightGreyBlue;
   }
-  //.cardMenu__link {
-  //color: ;
-  //}
+  .cardMenu__link {
+    color: $colorSlate;
+  }
 }
