@@ -33,4 +33,3 @@ function handleClickRadio3(event) {
 radioButton1.addEventListener('click', handleClickRadio1);
 radioButton2.addEventListener('click', handleClickRadio2);
 radioButton3.addEventListener('click', handleClickRadio3);
-
