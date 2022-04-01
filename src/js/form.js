@@ -1,18 +1,55 @@
 'use strict';
-// Colapsar DISEÑA
-designLegend.addEventListener('click', () => {
-  design.classList.toggle('collapsed');
-  arrowDesign.classList.toggle('rotate');
-});
+// Función para colapsar las secciones (section)
+function unfoldForm(legendId) {
+  if (legendId === 'designLegend') {
+    design.classList.toggle('collapsed');
+    fill.classList.add('collapsed');
+    share.classList.add('collapsed');
+  }
 
-// Colapsar RELLENA
-fillLegend.addEventListener('click', () => {
-  fill.classList.toggle('collapsed');
-  arrowFill.classList.toggle('rotate');
-});
+  if (legendId === 'fillLegend') {
+    design.classList.add('collapsed');
+    fill.classList.toggle('collapsed');
+    share.classList.add('collapsed');
+  }
 
-// Colapsar COMPARTE
-shareLegend.addEventListener('click', () => {
-  share.classList.toggle('collapsed');
-  arrowShare.classList.toggle('rotate');
-});
+  if (legendId === 'shareLegend') {
+    design.classList.add('collapsed');
+    fill.classList.add('collapsed');
+    share.classList.toggle('collapsed');
+  }
+}
+
+// Función para rotar la flecha, si preferimos separarlo. Sólo hay que recordar descomentar la función en la manejadora también
+function rotateArrow(arrow) {
+  if (arrow === 'designLegend') {
+    arrowDesign.classList.toggle('rotate');
+    arrowFill.classList.add('rotate');
+    arrowShare.classList.add('rotate');
+  }
+
+  if (arrow === 'fillLegend') {
+    arrowDesign.classList.add('rotate');
+    arrowFill.classList.toggle('rotate');
+    arrowShare.classList.add('rotate');
+  }
+
+  if (arrow === 'shareLegend') {
+    arrowDesign.classList.add('rotate');
+    arrowFill.classList.add('rotate');
+    arrowShare.classList.toggle('rotate');
+  }
+}
+
+// Función manejadora
+function handleCollapsed(event) {
+  event.preventDefault();
+  const legendId = event.currentTarget.id;
+  unfoldForm(legendId);
+  rotateArrow(legendId);
+}
+
+// Eventos
+designLegend.addEventListener('click', handleCollapsed);
+fillLegend.addEventListener('click', handleCollapsed);
+shareLegend.addEventListener('click', handleCollapsed);
