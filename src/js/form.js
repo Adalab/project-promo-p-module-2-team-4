@@ -20,7 +20,7 @@ function unfoldForm(legendId) {
   }
 }
 
-// Función para rotar la flecha, si preferimos separarlo. Sólo hay que recordar descomentar la función en la manejadora también
+// Función para rotar la flecha, si prefgiterimos separarlo. Sólo hay que recordar descomentar la función en la manejadora también
 function rotateArrow(arrow) {
   if (arrow === 'designLegend') {
     arrowDesign.classList.toggle('rotate');
