@@ -92,12 +92,12 @@
 }
 
 //Clases para JS
-.palette-1 {
+
+.preview .palette-1 {
   .cardInfo {
     border-left: solid 5px $colorDirtyBlue;
   }
-
-  .cardInfo__name {
+  .cardInfo .cardInfo__name {
     color: $colorDarkGreenBlue;
   }
   .cardMenu__icon {
@@ -108,11 +108,11 @@
   }
 }
 
-.palette-2 {
+.preview .palette-2 {
   .cardInfo {
     border-left: solid 5px $colorRustyRed;
   }
-  .cardInfo__name {
+  .cardInfo .cardInfo__name {
     color: $colorDriedBlood;
   }
   .cardMenu__icon {
@@ -123,11 +123,11 @@
   }
 }
 
-.palette-3 {
+.preview .palette-3 {
   .cardInfo {
     border-left: solid 5px $colorFadedOrange;
   }
-  .cardInfo__name {
+  .cardInfo .cardInfo__name {
     color: $colorSlate;
   }
   .cardMenu__icon {
