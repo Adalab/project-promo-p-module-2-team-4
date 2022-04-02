@@ -31,15 +31,31 @@ const cardGithub = document.querySelector('.js_cardGithub');
 
 function rederPreview() {
 
+  const githubName = data.github;
+  const githubValue = githubName.slice(1);
+
   cardName.innerHTML = data.name;
   cardJob.innerHTML = data.job;
   cardPhone.href = `tel: ${data.phone}`;
   cardEmail.href = `mailto: ${data.email}`;
+  cardLinkedin.href = `https://www.${data.linkedin}`;
+  cardGithub.href = `https://github.com/${githubValue}`;
 
 }
 
+function inputsBlanks() {
 
-// inputs blanks
+  if (data.name === '') {
+
+    data.name = 'Nombre Apellidos';
+
+  } else if (data.job === '') {
+
+    data.job = 'Front-end developer';
+
+  }
+
+}
 
 // Función manejadora
 
@@ -74,6 +90,7 @@ function handleKeyupInputs(event) {
   }
 
   rederPreview();
+  inputsBlanks();
 
 }
 
@@ -81,4 +98,4 @@ function handleKeyupInputs(event) {
 
 // Evento 'keyup'
 
-fill.addEventListener('keyup', handleKeyupInputs)
+fill.addEventListener('keyup', handleKeyupInputs);
