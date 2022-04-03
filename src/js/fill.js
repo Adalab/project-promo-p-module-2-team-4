@@ -43,19 +43,7 @@ function rederPreview() {
 
 }
 
-function inputsBlanks() {
 
-  if (data.name === '') {
-
-    data.name = 'Nombre Apellidos';
-
-  } else if (data.job === '') {
-
-    data.job = 'Front-end developer';
-
-  }
-
-}
 
 // Función manejadora
 
@@ -65,11 +53,19 @@ function handleKeyupInputs(event) {
 
   if (inputUsed.id === 'name') {
 
-    data.name = inputUsed.value;
+    if (inputUsed.value === '') {
+      data.name = 'Nombre Apellidos';
+    } else {
+      data.name = inputUsed.value;
+    }
 
   } else if (inputUsed.id === 'job') {
 
-    data.job = inputUsed.value;
+    if (inputUsed.value === '') {
+      data.job = 'Front-end developer';
+    } else {
+      data.job = inputUsed.value;
+    }
 
   } else if (inputUsed.id === 'email') {
 
@@ -90,7 +86,6 @@ function handleKeyupInputs(event) {
   }
 
   rederPreview();
-  inputsBlanks();
 
 }
 
