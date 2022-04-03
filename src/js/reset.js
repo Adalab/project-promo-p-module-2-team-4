@@ -8,7 +8,7 @@ const resetButton = document.querySelector('.js_reset');
 
 // Funciones con una única acción
 
-function resetCardFiels() {
+function resetCardFields() {
 
   cardName.innerHTML = 'Nombre Apellidos';
   cardJob.innerHTML = 'Front-end developer';
@@ -36,7 +36,7 @@ function handleClickButtonReset() {
   form.reset();
 
   // Reset de los campos de las tarjeta preview
-  resetCardFiels();
+  resetCardFields();
 
   // Reset de Crear tarjeta
   resetCreateCard();
