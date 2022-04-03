@@ -57,6 +57,7 @@ function handleKeyupInputs(event) {
       data.name = 'Nombre Apellidos';
     } else {
       data.name = inputUsed.value;
+      data.job = 'Front-end developer';
     }
 
   } else if (inputUsed.id === 'job') {
@@ -65,6 +66,7 @@ function handleKeyupInputs(event) {
       data.job = 'Front-end developer';
     } else {
       data.job = inputUsed.value;
+      data.name = 'Nombre Apellidos';
     }
 
   } else if (inputUsed.id === 'email') {

@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
 
-  .buttonCard {
+  .buttonCreateCard {
     background-color: $colorDullOrange;
     border: none;
     border-radius: 12px;
@@ -30,7 +30,7 @@
     justify-content: space-between;
     align-items: center;
 
-    .buttonCard__icon {
+    &__icon {
       width: 25px;
       height: 22px;
 
@@ -38,62 +38,59 @@
       justify-content: center;
       align-items: center;
     }
-  }
 
-  .buttonCard--send {
-    background-color: $colorWhiteThree;
-  }
-
-  .containerDone {
-    border-top: $colorWhiteTwo solid 1px;
-
-    font-family: $fontMain;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    &__title {
-      margin-top: 20px;
-
-      color: $colorGunmetal;
-      font-size: 18px;
-      font-weight: 600;
-    }
-
-    &__link {
-      margin-top: 10px;
-
-      color: $colorDullOrange;
-      font-size: 12px;
-      font-weight: 600;
-    }
-
-    .buttonShare {
-      background-color: $colorAzure;
-      border: none;
-      border-radius: 3px;
-      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-
-      width: 181px;
-      height: 30px;
-
-      padding: 3px 9px 6px 10.5px;
-      margin: 10px 0 30px;
-
-      color: $colorWhite;
-      font-family: $fontMain;
-      font-size: 14px;
-      font-weight: 400;
-
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    &--sent {
+      background-color: $colorWhiteThree;
     }
   }
 }
 
-.uppercase {
-  text-transform: uppercase;
+.containerDone {
+  border-top: $colorWhiteTwo solid 1px;
+
+  font-family: $fontMain;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    margin-top: 20px;
+
+    color: $colorGunmetal;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__link {
+    margin-top: 10px;
+
+    color: $colorDullOrange;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .buttonShare {
+    background-color: $colorAzure;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+
+    width: 181px;
+    height: 30px;
+
+    padding: 3px 9px 6px 10.5px;
+    margin: 10px 0 30px;
+
+    color: $colorWhite;
+    font-family: $fontMain;
+    font-size: 14px;
+    font-weight: 400;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
