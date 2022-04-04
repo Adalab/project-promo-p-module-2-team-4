@@ -90,3 +90,50 @@
     }
   }
 }
+
+//Clases para JS
+
+.preview .palette-1 {
+  .cardInfo {
+    border-left: solid 5px $colorDirtyBlue;
+  }
+  .cardInfo .cardInfo__name {
+    color: $colorDarkGreenBlue;
+  }
+  .cardMenu__icon {
+    border: solid 2px $colorHospitalGreen;
+  }
+  .cardMenu__link {
+    color: $colorDarkGreenBlue;
+  }
+}
+
+.preview .palette-2 {
+  .cardInfo {
+    border-left: solid 5px $colorRustyRed;
+  }
+  .cardInfo .cardInfo__name {
+    color: $colorDriedBlood;
+  }
+  .cardMenu__icon {
+    border: solid 2px $colorTomato;
+  }
+  .cardMenu__link {
+    color: $colorDriedBlood;
+  }
+}
+
+.preview .palette-3 {
+  .cardInfo {
+    border-left: solid 5px $colorFadedOrange;
+  }
+  .cardInfo .cardInfo__name {
+    color: $colorSlate;
+  }
+  .cardMenu__icon {
+    border: solid 2px $colorLightGreyBlue;
+  }
+  .cardMenu__link {
+    color: $colorSlate;
+  }
+}
