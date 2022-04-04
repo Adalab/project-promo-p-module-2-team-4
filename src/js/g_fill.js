@@ -29,17 +29,46 @@ const cardGithub = document.querySelector('.js_cardGithub');
 
 // Funciones con "una" acción
 
-function rederPreview() {
+function renderPreview() {
 
   const githubName = data.github;
   const githubValue = githubName.slice(1);
 
-  cardName.innerHTML = data.name;
-  cardJob.innerHTML = data.job;
-  cardPhone.href = `tel: ${data.phone}`;
-  cardEmail.href = `mailto: ${data.email}`;
-  cardLinkedin.href = `https://www.${data.linkedin}`;
-  cardGithub.href = `https://github.com/${githubValue}`;
+  if (data.name === '') {
+    cardName.innerHTML = 'Nombre Apellidos';
+  } else {
+    cardName.innerHTML = data.name;
+  }
+
+  if (data.job === '') {
+    cardJob.innerHTML = 'Front-end developer';
+  } else {
+    cardJob.innerHTML = data.job;
+  }
+
+  if (data.phone === '') {
+    cardPhone.href = '';
+  } else {
+    cardPhone.href = `tel: ${data.phone}`;
+  }
+
+  if (data.email === '') {
+    cardEmail.href = '';
+  } else {
+    cardEmail.href = `mailto: ${data.email}`;
+  }
+
+  if (data.linkedin === '') {
+    cardLinkedin.href = '';
+  } else {
+    cardLinkedin.href = `https://www.${data.linkedin}`;
+  }
+
+  if (data.github === '') {
+    cardGithub.href = '';
+  } else {
+    cardGithub.href = `https://github.com/${githubValue}`;
+  }
 
 }
 
@@ -53,21 +82,11 @@ function handleKeyupInputs(event) {
 
   if (inputUsed.id === 'name') {
 
-    if (inputUsed.value === '') {
-      data.name = 'Nombre Apellidos';
-    } else {
-      data.name = inputUsed.value;
-      data.job = 'Front-end developer';
-    }
+    data.name = inputUsed.value;
 
   } else if (inputUsed.id === 'job') {
 
-    if (inputUsed.value === '') {
-      data.job = 'Front-end developer';
-    } else {
-      data.job = inputUsed.value;
-      data.name = 'Nombre Apellidos';
-    }
+    data.job = inputUsed.value;
 
   } else if (inputUsed.id === 'email') {
 
@@ -87,7 +106,7 @@ function handleKeyupInputs(event) {
 
   }
 
-  rederPreview();
+  renderPreview();
 
 }
 
