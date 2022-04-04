@@ -27,7 +27,14 @@ function resetCreateCard() {
 
 }
 
+// Función para resetear las paletas de colores
+function resetPalettes() {
 
+  previewContainerCard.classList.add('palette-1');
+  previewContainerCard.classList.remove('palette-2');
+  previewContainerCard.classList.remove('palette-3');
+
+}
 
 // Función manejadora de reset
 function handleClickButtonReset() {
@@ -40,6 +47,9 @@ function handleClickButtonReset() {
 
   // Reset de Crear tarjeta
   resetCreateCard();
+
+  // Reset de las paletas
+  resetPalettes();
 
 }
 
