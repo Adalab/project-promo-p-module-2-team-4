@@ -23,11 +23,13 @@
 
   <body>
     <header class="header">
-      <img
-        src="./assets/images/tarjetas-molonas.svg"
-        alt="Awesome profile-cards"
-        class="imageAwesome"
-      />
+      <a href="./index.html" title="¡Volver al inicio!">
+        <img
+          src="./assets/images/tarjetas-molonas.svg"
+          alt="Awesome profile-cards"
+          class="imageAwesome"
+        />
+      </a>
     </header>
 
 
@@ -35,16 +37,16 @@
       <section class="preview">
         <!--Parte silver-->
         <article>
-          <button class="card__reset" href="">
+          <button class="card__reset js_reset" href="">
             <i class="card__icon far fa-trash-alt"></i>Reset
           </button>
 
           <!--Parte blanca-->
-          <div class="containerCard">
+          <div class="palette-1 containerCard js_preview">
             <!--Datos personales-->
-            <div class="cardInfo">
-              <h2 class="cardInfo__name">Nombre apellidos</h2>
-              <p class="cardInfo__description">Front-end developer</p>
+            <div class="cardInfo js_cardInfo">
+              <h2 class="cardInfo__name js_cardName">Nombre apellidos</h2>
+              <p class="cardInfo__description js_cardJob">Front-end developer</p>
             </div>
 
             <div class="cardImage"></div>
@@ -53,29 +55,37 @@
               <ul class="cardMenu">
                 <li class="cardMenu__icon">
                   <a
-                    class="cardMenu__link"
+                    class="cardMenu__link js_cardPhone js_cardLink"
                     href=""
                     target="_blank"
-                    title="Phone number"
+                    title="Número de teléfono"
                     ><i class="icon fas fa-mobile-alt"></i>
                   </a>
                 </li>
                 <li class="cardMenu__icon">
                   <a
-                    class="cardMenu__link"
+                    class="cardMenu__link js_cardEmail js_cardLink"
                     href=""
                     target="_blank"
-                    title="E-mail address"
+                    title="Dirección de correo"
                     ><i class="icon far fa-envelope"></i>
                   </a>
                 </li>
                 <li class="cardMenu__icon">
-                  <a class="cardMenu__link" href="" target="_blank" title="LinkedIn"
+                  <a
+                    class="cardMenu__link js_cardLinkedin js_cardLink"
+                    href=""
+                    target="_blank"
+                    title="Perfil en LinkedIn"
                     ><i class="icon fab fa-linkedin-in"></i>
                   </a>
                 </li>
                 <li class="cardMenu__icon">
-                  <a class="cardMenu__link" href="" target="_blank" title="GitHub"
+                  <a
+                    class="cardMenu__link js_cardGithub js_cardLink"
+                    href=""
+                    target="_blank"
+                    title="Perfil de GitHub"
                     ><i class="icon fab fa-github-alt"></i>
                   </a>
                 </li>
@@ -86,20 +96,24 @@
       </section>
 
 
-      <form action="" class="form">
+      <form action="" class="form js_form">
         <fieldset class="fieldset">
-          <legend class="legend js_designLegend uppercase">
+          <legend
+            class="legend js_designLegend uppercase"
+            id="designLegend"
+            title="Elige los colores"
+          >
             <i class="far fa-object-ungroup legend__icon legend__icon--orange"></i>
             <span class="legend__text">Diseña</span>
             <i
               class="fas fa-angle-up legend__icon legend__icon--arrow js_arrowDesign"
             ></i>
           </legend>
-          <section class="containerDesign js_design collapsed">
+          <section class="containerDesign js_design">
             <h2 class="containerDesign__title">Colores</h2>
             <div class="containerDesign__options">
               <div class="options__palette">
-                <input class="radio" name="palette" type="radio" id="radio1" />
+                <input class="radio js_radio-1 js_radio" name="palette" type="radio" id="radio1" checked />
 
                 <label for="radio1" class="palette__sample palette__sample--1"></label>
 
@@ -109,7 +123,7 @@
               </div>
 
               <div class="options__palette">
-                <input class="radio" name="palette" type="radio" id="radio2" />
+                <input class="radio js_radio-2" name="palette" type="radio" id="radio2" />
 
                 <label for="radio2" class="palette__sample palette__sample--4"></label>
 
@@ -119,7 +133,7 @@
               </div>
 
               <div class="options__palette">
-                <input class="radio" name="palette" type="radio" id="radio3" />
+                <input class="radio js_radio-3" name="palette" type="radio" id="radio3" />
 
                 <label for="radio3" class="palette__sample palette__sample--7"></label>
 
@@ -133,74 +147,80 @@
         </fieldset>
 
         <fieldset class="fieldset">
-          <legend class="legend js_fillLegend uppercase">
+          <legend
+            class="legend js_fillLegend uppercase"
+            id="fillLegend"
+            title="Escribe tus datos"
+          >
             <i class="far fa-keyboard legend__icon legend__icon--orange"></i>
             <span class="legend__text">Rellena</span>
             <i
-              class="fas fa-angle-up legend__icon legend__icon--arrow js_arrowFill"
+              class="fas fa-angle-up legend__icon legend__icon--arrow js_arrowFill rotate"
             ></i>
           </legend>
           <div class="containerFill js_fill collapsed">
-            <label class="label" for="">Nombre completo</label>
+            <label class="label" for="name">Nombre completo</label>
             <input
               class="field"
-              name=""
+              name="name"
               type="text"
-              id=""
+              id="name"
               placeholder="P. ej. Sally Jill"
             />
 
-            <label class="label" for="">Puesto</label>
+            <label class="label" for="job">Puesto</label>
             <input
               class="field"
-              name=""
+              name="job"
               type="text"
-              id=""
+              id="job"
               placeholder="P. ej. Front-end unicorn"
             />
 
             <label class="label" for="">Imagen de perfil</label>
             <div class="component">
               <!--Div temporal para maquetar estos dos items-->
-              <label class="component__btnAddImage" name="" type="button" id=""
+              <label class="component__btnAddImage" type="button" for="addPhoto"
                 >Añadir imagen</label
               >
+              <!-- <input type="file" name="addPhoto" id="addPhoto" /> -->
+              <!-- Este input es para las imagenes y tiene que estar oculto -->
               <div class="component__square"></div>
             </div>
 
-            <label class="label" for="">E-mail</label>
+            <label class="label" for="email">E-mail</label>
             <input
               class="field"
-              name=""
+              name="email"
               type="email"
-              id=""
+              id="email"
               placeholder="P. ej. sally-hill@gmail.com"
             />
 
-            <label class="label" for="">Teléfono</label>
+            <label class="label" for="phone">Teléfono</label>
             <input
               class="field"
-              name=""
+              name="phone"
               type="tel"
-              id=""
+              id="phone"
               placeholder="P. ej. 555 55 55 55"
             />
 
-            <label class="label" for="">LinkedIn</label>
+            <label class="label" for="linkedin">LinkedIn</label>
             <input
               class="field"
-              name=""
+              name="linkedin"
               type="text"
-              id=""
+              id="linkedin"
               placeholder="P. ej. linkedin.com/in/sally.hill"
             />
 
-            <label class="label" for="">GitHub</label>
+            <label class="label" for="github">GitHub</label>
             <input
               class="field"
-              name=""
+              name="github"
               type="text"
-              id=""
+              id="github"
               placeholder="P. ej. @sally-hill"
             />
           </div>
@@ -208,19 +228,24 @@
         </fieldset>
 
         <fieldset class="fieldset">
-          <legend class="legend js_shareLegend uppercase">
+          <legend
+            class="legend js_shareLegend uppercase"
+            id="shareLegend"
+            title="¡Comparte tu tarjeta!"
+          >
             <i class="fa-solid fa-share-nodes legend__icon legend__icon--orange"></i>
             <span class="legend__text">Comparte</span>
             <i
-              class="fas fa-angle-up legend__icon legend__icon--arrow js_arrowShare"
+              class="fas fa-angle-up legend__icon legend__icon--arrow js_arrowShare rotate"
             ></i>
           </legend>
           <div class="containerShare js_share collapsed">
-            <button class="buttonCard uppercase">
-              <i class="fa-regular fa-address-card buttonCard__icon"></i>
+            <button class="buttonCreateCard uppercase js_buttonCreateCard">
+              <i class="fa-regular fa-address-card buttonCreateCard__icon"></i>
               Crear tarjeta
             </button>
-            <div class="containerDone">
+
+            <div class="containerDone js_containerDone collapsed">
               <h2 class="containerDone__title">La tarjeta ha sido creada</h2>
               <!--Un título por definir número-->
               <a href="" class="containerDone__link"
@@ -239,7 +264,12 @@
 
     <footer class="footer">
       <small class="small_text">Awesome profile-cards &copy; 2022</small>
-      <img class="img_logo" src="./assets/images/logo-adalab.png" alt="Logo Adalab" />
+      <a href="https://adalab.es/" title="Visita Adalab" target="_blank"
+        ><img
+          class="img_logo"
+          src="./assets/images/logo-adalab.png"
+          alt="Logo Adalab"
+      /></a>
     </footer>
 
 
