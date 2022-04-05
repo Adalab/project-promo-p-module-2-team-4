@@ -4,13 +4,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 85vh;
+  min-height: 100vh;
 }
 
 @media (min-width: 768px) {
-  .mainLanding {
-    height: 90vh;
-  }
   .landing__button {
     margin-top: 90px;
   }
@@ -59,9 +56,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
 
-.landing__link1--object {
   width: 32px;
   height: 26px;
   color: $colorDullOrange;
