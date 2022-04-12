@@ -11,7 +11,7 @@ const data = {
   name: '',
   job: '',
   email: '',
-  phone:'',
+  phone: '',
   linkedin: '',
   github: '',
   photo: '',
@@ -24,13 +24,12 @@ const cardPhone = document.querySelector('.js_cardPhone');
 const cardEmail = document.querySelector('.js_cardEmail');
 const cardLinkedin = document.querySelector('.js_cardLinkedin');
 const cardGithub = document.querySelector('.js_cardGithub');
-
-
+const cardImage = document.querySelector('.js__profile-image');
+const cardImagePrev = document.querySelector('.js__profile-preview');
 
 // Funciones con "una" acción
 
 function renderPreview() {
-
   const githubName = data.github;
   const githubValue = githubName.slice(1);
 
@@ -69,48 +68,29 @@ function renderPreview() {
   } else {
     cardGithub.href = `https://github.com/${githubValue}`;
   }
-
 }
-
-
 
 // Función manejadora
 
 function handleKeyupInputs(event) {
-
   const inputUsed = event.target;
 
   if (inputUsed.id === 'name') {
-
     data.name = inputUsed.value;
-
   } else if (inputUsed.id === 'job') {
-
     data.job = inputUsed.value;
-
   } else if (inputUsed.id === 'email') {
-
     data.email = inputUsed.value;
-
   } else if (inputUsed.id === 'phone') {
-
     data.phone = inputUsed.value;
-
   } else if (inputUsed.id === 'linkedin') {
-
     data.linkedin = inputUsed.value;
-
   } else if (inputUsed.id === 'github') {
-
     data.github = inputUsed.value;
-
   }
 
   renderPreview();
-
 }
-
-
 
 // Evento 'keyup'
 
