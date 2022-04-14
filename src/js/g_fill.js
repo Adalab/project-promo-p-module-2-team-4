@@ -18,6 +18,8 @@ const data = {
 };
 
 // Constantes de los elementos de la tarjeta
+
+// ¿se podría hacer sólo const cardName = document.querySelector('.js_cardName').innerHTML o .href porque es la única información del elemento que vamos a necesitar, no hace falta que nos traigamos todo del elemento?
 const cardName = document.querySelector('.js_cardName');
 const cardJob = document.querySelector('.js_cardJob');
 const cardPhone = document.querySelector('.js_cardPhone');
@@ -26,6 +28,7 @@ const cardLinkedin = document.querySelector('.js_cardLinkedin');
 const cardGithub = document.querySelector('.js_cardGithub');
 const cardImage = document.querySelector('.js__profile-image');
 const cardImagePrev = document.querySelector('.js__profile-preview');
+const containerCreateCard = document.querySelector('.js_containerDone');
 
 // Funciones con "una" acción
 
