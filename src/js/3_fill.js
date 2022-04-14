@@ -28,7 +28,6 @@ const cardLinkedin = document.querySelector('.js_cardLinkedin');
 const cardGithub = document.querySelector('.js_cardGithub');
 const cardImage = document.querySelector('.js__profile-image');
 const cardImagePrev = document.querySelector('.js__profile-preview');
-const containerCreateCard = document.querySelector('.js_containerDone');
 
 // Funciones con "una" acción
 
@@ -95,7 +94,20 @@ function handleKeyupInputs(event) {
 
   renderPreview();
 
-  /* console.log(data); */
+  /* containerDone.classList.add('collapsed'); */
+
+  if (
+    data.name !== '' &&
+    data.job !== '' &&
+    data.phone !== '' &&
+    data.email !== '' &&
+    data.linkedin !== '' &&
+    data.github !== '' &&
+    data.photo !== ''
+  ) {
+    containerDone.innerHTML = '';
+  }
+
 }
 
 // Evento 'keyup'
