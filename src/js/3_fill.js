@@ -30,8 +30,9 @@ const cardImagePrev = document.querySelector('.js__profile-preview');
 // Funciones con "una" acción
 
 function renderPreview() {
-  const githubName = data.github;
-  const githubValue = githubName.slice(1);
+  // Esto es por si preferimos escribir el usuario de github con @
+  /* const githubName = data.github;
+  const githubValue = githubName.slice(1); */
 
   if (data.name === '') {
     cardName.innerHTML = 'Nombre Apellidos';
@@ -60,13 +61,13 @@ function renderPreview() {
   if (data.linkedin === '') {
     cardLinkedin.href = '';
   } else {
-    cardLinkedin.href = `https://www.${data.linkedin}`;
+    cardLinkedin.href = `https://www.linkedin.com/in/${data.linkedin}`;
   }
 
   if (data.github === '') {
     cardGithub.href = '';
   } else {
-    cardGithub.href = `https://github.com/${githubValue}`;
+    cardGithub.href = `https://github.com/${data.github}`;
   }
 }
 
@@ -90,6 +91,8 @@ function handleKeyupInputs(event) {
   }
 
   renderPreview();
+
+  /* console.log(data); */
 }
 
 // Evento 'keyup'

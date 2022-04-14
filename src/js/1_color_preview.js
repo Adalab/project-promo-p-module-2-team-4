@@ -13,6 +13,8 @@ function handleClickRadio1(event) {
   previewContainerCard.classList.remove('palette-3');
 
   previewContainerCard.classList.add('palette-1');
+
+  data.palette = 1;
 }
 
 function handleClickRadio2(event) {
@@ -20,6 +22,8 @@ function handleClickRadio2(event) {
   previewContainerCard.classList.remove('palette-3');
 
   previewContainerCard.classList.add('palette-2');
+
+  data.palette = 2;
 }
 
 function handleClickRadio3(event) {
@@ -27,6 +31,8 @@ function handleClickRadio3(event) {
   previewContainerCard.classList.remove('palette-2');
 
   previewContainerCard.classList.add('palette-3');
+
+  data.palette = 3;
 }
 
 
