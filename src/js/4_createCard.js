@@ -6,7 +6,6 @@ const containerDone = document.querySelector('.js_containerDone');
 
 // Funciones con "una" única acción
 
-
 function fetchCardLink() {
   fetch('//awesome-profile-cards.herokuapp.com/card', {
     method: 'POST',
@@ -16,39 +15,41 @@ function fetchCardLink() {
     .then((response) => response.json())
     .then((result) => {
       console.log(result);
-      
-        containerDone.classList.remove('collapsed');
 
-        // Crear <h2>
-        const containerDoneTitle = document.createElement('h2');containerDoneTitle.classList.add('containerDone__title');
-        const containerDoneTitleContent = document.createTextNode('¡Bien hecho! Tu tarjeta ha sido creada');
-        containerDoneTitle.appendChild(containerDoneTitleContent);
+      containerDone.classList.remove('collapsed');
 
-        // Crear <a>
-        const containerDoneLink = document.createElement('a');
-        containerDoneLink.href = result.cardURL;
-        containerDoneLink.target = '_blanck';
-        containerDoneLink.classList.add('containerDone__link');
-        const containerDoneLinkContent = document.createTextNode(result.cardURL);
-        containerDoneLink.appendChild(containerDoneLinkContent);
+      // Crear <h2>
+      const containerDoneTitle = document.createElement('h2');
+      containerDoneTitle.classList.add('containerDone__title');
+      const containerDoneTitleContent = document.createTextNode(
+        '¡Bien hecho! Tu tarjeta ha sido creada'
+      );
+      containerDoneTitle.appendChild(containerDoneTitleContent);
 
-        // Crear <button>
-        const buttonShare = document.createElement('button');
-        buttonShare.classList.add('buttonShare');
-        const iconShare = document.createElement('i');
-        iconShare.classList.add('fa-brands', 'fa-twitter');
-        const buttonShareContent = document.createTextNode(' Compartir en Twitter');
-        buttonShare.append(iconShare, buttonShareContent);
+      // Crear <a>
+      const containerDoneLink = document.createElement('a');
+      containerDoneLink.href = result.cardURL;
+      containerDoneLink.target = '_blanck';
+      containerDoneLink.classList.add('containerDone__link');
+      const containerDoneLinkContent = document.createTextNode(result.cardURL);
+      containerDoneLink.appendChild(containerDoneLinkContent);
 
-        // Insertar los elementos en el containerDone
-        containerDone.append(containerDoneTitle, containerDoneLink, buttonShare);
+      // Crear <button>
+      const buttonShare = document.createElement('button');
+      buttonShare.classList.add('js-buttonShare');
+      const iconShare = document.createElement('i');
+      iconShare.classList.add('fa-brands', 'fa-twitter');
+      const buttonShareContent = document.createTextNode(
+        ' Compartir en Twitter'
+      );
+      buttonShare.append(iconShare, buttonShareContent);
 
+      // Insertar los elementos en el containerDone
+      containerDone.append(containerDoneTitle, containerDoneLink, buttonShare);
     });
 }
 
-
 function validateFormFields() {
-
   if (
     data.name !== '' &&
     data.job !== '' &&
@@ -58,22 +59,20 @@ function validateFormFields() {
     data.github !== '' &&
     data.photo !== ''
   ) {
-
     fetchCardLink();
-
   } else {
-
     containerDone.classList.remove('collapsed');
 
     // Crear <h2> error
-    const containerDoneTitle = document.createElement('h2');containerDoneTitle.classList.add('containerDone__title');
-    const containerDoneTitleContent = document.createTextNode('¡Ojo! Rellena todo el formulario');
+    const containerDoneTitle = document.createElement('h2');
+    containerDoneTitle.classList.add('containerDone__title');
+    const containerDoneTitleContent = document.createTextNode(
+      '¡Ojo! Rellena todo el formulario'
+    );
     containerDoneTitle.appendChild(containerDoneTitleContent);
 
     containerDone.appendChild(containerDoneTitle);
-
   }
-
 }
 
 /* function validationFormFields() {
@@ -91,9 +90,6 @@ function validateFormFields() {
   containerDone.innerHTML = html;
 } */
 
-
-
-
 // Función manejadora
 function handleClickButtonCreateCard(event) {
   event.preventDefault();
@@ -101,7 +97,6 @@ function handleClickButtonCreateCard(event) {
   validateFormFields();
   createCard();
 }
-
 
 // Evento
 buttonCreateCard.addEventListener('click', handleClickButtonCreateCard);

@@ -6,7 +6,7 @@
 // const fill = document.querySelector('.js_fill');
 
 // Objeto que recoge los valores que escribimos en los inputs
-const data = {
+let data = {
   palette: 1,
   name: '',
   job: '',
@@ -92,6 +92,8 @@ function handleKeyupInputs(event) {
     data.github = inputUsed.value;
   }
 
+  localStorage.setItem('localStorage', JSON.stringify(data));
+
   renderPreview();
 
   /* containerDone.classList.add('collapsed'); */
@@ -107,7 +109,6 @@ function handleKeyupInputs(event) {
   ) {
     containerDone.innerHTML = '';
   }
-
 }
 
 // Evento 'keyup'

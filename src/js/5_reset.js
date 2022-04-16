@@ -42,6 +42,9 @@ function handleClickButtonReset() {
 
   // Reset de las paletas
   resetPalettes();
+
+  // Reset del Local Storage
+  localStorage.removeItem('localStorage');
 }
 
 // Evento reset haciendo click en el botón reset
