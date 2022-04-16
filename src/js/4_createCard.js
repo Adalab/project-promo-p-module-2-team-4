@@ -37,12 +37,20 @@ function fetchCardLink() {
       // Crear <button>
       const buttonShare = document.createElement('button');
       buttonShare.classList.add('js-buttonShare');
+
+      const buttonShareLink = document.createElement('a');
+      buttonShareLink.href = `https://twitter.com/intent/tweet?text=%C2%A1He%20creado%20mi%20propia%20tarjeta%20de%20contacto%20kawaii!%20Puedes%20verla%20aqu%C3%AD%3A&url=${containerDoneLink.href}`;
+      buttonShareLink.target = '_blanck';
+
       const iconShare = document.createElement('i');
       iconShare.classList.add('fa-brands', 'fa-twitter');
+
       const buttonShareContent = document.createTextNode(
         ' Compartir en Twitter'
       );
-      buttonShare.append(iconShare, buttonShareContent);
+
+      buttonShare.appendChild(buttonShareLink);
+      buttonShareLink.append(iconShare, buttonShareContent);
 
       // Insertar los elementos en el containerDone
       containerDone.append(containerDoneTitle, containerDoneLink, buttonShare);
