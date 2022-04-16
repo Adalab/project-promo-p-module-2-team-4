@@ -57,16 +57,16 @@ function fetchCardLink() {
     });
 }
 
-function missCardLink() {
+function showErrorMsg() {
 
   containerDone.classList.remove('collapsed');
 
-      // Crear <h2> error
-      const containerDoneTitle = document.createElement('h2');containerDoneTitle.classList.add('containerDone__title');
-      const containerDoneTitleContent = document.createTextNode('¡Ojo! Rellena todo el formulario');
-      containerDoneTitle.appendChild(containerDoneTitleContent);
+  // Crear <h2> error
+  const containerDoneTitle = document.createElement('h2');containerDoneTitle.classList.add('containerDone__title');
+  const containerDoneTitleContent = document.createTextNode('¡Ojo! Rellena todo el formulario');
+  containerDoneTitle.appendChild(containerDoneTitleContent);
 
-      containerDone.appendChild(containerDoneTitle);
+  containerDone.appendChild(containerDoneTitle);
 
 }
 
@@ -93,7 +93,7 @@ function validateFormFields() {
   }
 }
 
-function clickOneTimeButtonCreateCard() {
+function clickOnceButtonCreateCard() {
   if(containerDone.innerHTML === '') {
   
     if(validateFormFields() === true) {
@@ -102,7 +102,7 @@ function clickOneTimeButtonCreateCard() {
 
     } else {
 
-      missCardLink();
+      showErrorMsg();
 
     }
   }
@@ -127,7 +127,7 @@ function clickOneTimeButtonCreateCard() {
 function handleClickButtonCreateCard(event) {
   event.preventDefault();
 
-  clickOneTimeButtonCreateCard();
+  clickOnceButtonCreateCard();
 
 }
 
