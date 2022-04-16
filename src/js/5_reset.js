@@ -18,8 +18,11 @@ function resetCardFields() {
 }
 
 function resetCreateCard() {
+  data.phone = '';
   buttonCreateCard.classList.remove('buttonCreateCard--sent');
   containerDone.classList.add('collapsed');
+  buttonCreateCard.disabled = false;
+  containerDone.innerHTML = '';
 }
 
 // Función para resetear las paletas de colores

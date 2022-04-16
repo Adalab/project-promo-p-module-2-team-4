@@ -4,6 +4,7 @@
 const buttonCreateCard = document.querySelector('.js_buttonCreateCard');
 const containerDone = document.querySelector('.js_containerDone');
 
+
 // Funciones con "una" única acción
 
 function fetchCardLink() {
@@ -14,7 +15,6 @@ function fetchCardLink() {
   })
     .then((response) => response.json())
     .then((result) => {
-      console.log(result);
 
       containerDone.classList.remove('collapsed');
 
@@ -57,6 +57,20 @@ function fetchCardLink() {
     });
 }
 
+function missCardLink() {
+
+  containerDone.classList.remove('collapsed');
+
+      // Crear <h2> error
+      const containerDoneTitle = document.createElement('h2');containerDoneTitle.classList.add('containerDone__title');
+      const containerDoneTitleContent = document.createTextNode('¡Ojo! Rellena todo el formulario');
+      containerDoneTitle.appendChild(containerDoneTitleContent);
+
+      containerDone.appendChild(containerDoneTitle);
+
+}
+
+
 function validateFormFields() {
   if (
     data.name !== '' &&
@@ -67,19 +81,30 @@ function validateFormFields() {
     data.github !== '' &&
     data.photo !== ''
   ) {
-    fetchCardLink();
+
+    fetchCardLink();    
+    buttonCreateCard.classList.add('buttonCreateCard--sent');
+    return true;
+
   } else {
-    containerDone.classList.remove('collapsed');
 
-    // Crear <h2> error
-    const containerDoneTitle = document.createElement('h2');
-    containerDoneTitle.classList.add('containerDone__title');
-    const containerDoneTitleContent = document.createTextNode(
-      '¡Ojo! Rellena todo el formulario'
-    );
-    containerDoneTitle.appendChild(containerDoneTitleContent);
+    return false;
 
-    containerDone.appendChild(containerDoneTitle);
+  }
+}
+
+function clickOneTimeButtonCreateCard() {
+  if(containerDone.innerHTML === '') {
+  
+    if(validateFormFields() === true) {
+
+      buttonCreateCard.disabled = true;
+
+    } else {
+
+      missCardLink();
+
+    }
   }
 }
 
@@ -102,8 +127,8 @@ function validateFormFields() {
 function handleClickButtonCreateCard(event) {
   event.preventDefault();
 
-  validateFormFields();
-  createCard();
+  clickOneTimeButtonCreateCard();
+
 }
 
 // Evento
