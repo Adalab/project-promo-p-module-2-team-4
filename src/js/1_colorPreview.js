@@ -15,7 +15,7 @@ function handleClickRadio1(event) {
 
   data.palette = 1;
 
-  localStorage.setItem('localStorage', JSON.stringify(data));
+  //localStorage.setItem('localStorage', JSON.stringify(data));
 }
 
 function handleClickRadio2(event) {
@@ -26,7 +26,7 @@ function handleClickRadio2(event) {
 
   data.palette = 2;
 
-  localStorage.setItem('localStorage', JSON.stringify(data));
+  //localStorage.setItem('localStorage', JSON.stringify(data));
 }
 
 function handleClickRadio3(event) {
@@ -37,7 +37,7 @@ function handleClickRadio3(event) {
 
   data.palette = 3;
 
-  localStorage.setItem('localStorage', JSON.stringify(data));
+  //localStorage.setItem('localStorage', JSON.stringify(data));
 }
 
 radioButton1.addEventListener('click', handleClickRadio1);
