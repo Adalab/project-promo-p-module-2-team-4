@@ -108,6 +108,7 @@ function handleKeyupInputs(event) {
     data.photo !== ''
   ) {
     containerDone.innerHTML = '';
+    containerDone.classList.add('collapsed');
   }
 }
 
