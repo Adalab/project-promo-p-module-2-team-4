@@ -1,30 +1,30 @@
 'use strict';
 // Nueva constante para poder hacer un querySelectorALL del formulario (la otra que teníamos era un querySelector nada más):
-// const form(LocalStorage) = document.querySelectorAll('.js_form');
+const formLC = document.querySelectorAll('.js_form');
 
-function localStoragePalettes() {
-  if (data.palette === radioButton1.value) {
-    previewContainerCard.classList.remove('palette-2');
-    previewContainerCard.classList.remove('palette-3');
-    previewContainerCard.classList.add('palette-1');
+/* function localStoragePalettes() {
+  if ((radioButton1.checked = true)) {
+    // previewContainerCard.classList.remove('palette-2');
+    // previewContainerCard.classList.remove('palette-3');
+    // previewContainerCard.classList.add('palette-1');
 
-    radioButton1.checked = true;
-  } else if (data.palette === radioButton2.value) {
-    previewContainerCard.classList.remove('palette-1');
-    previewContainerCard.classList.remove('palette-3');
-    previewContainerCard.classList.add('palette-2');
+    data.palette === radioButton1.value;
+  } else if ((radioButton2.checked = true)) {
+    // previewContainerCard.classList.remove('palette-1');
+    // previewContainerCard.classList.remove('palette-3');
+    // previewContainerCard.classList.add('palette-2');
 
-    radioButton2.checked = true;
-  } else if (data.palette === radioButton3.value) {
-    previewContainerCard.classList.remove('palette-1');
-    previewContainerCard.classList.remove('palette-2');
-    previewContainerCard.classList.add('palette-3');
+    data.palette === radioButton2.value;
+  } else if ((radioButton3.checked = true)) {
+    // previewContainerCard.classList.remove('palette-1');
+    // previewContainerCard.classList.remove('palette-2');
+    // previewContainerCard.classList.add('palette-3');
 
-    radioButton3.checked = true;
+    data.palette === radioButton3.value;
   }
-}
+} */
 
-function localStorageFill() {
+/* function localStorageFill() {
   for (const formInput of form) {
     if (formInput.id === 'name') {
       formInput.value = data.name;
@@ -40,9 +40,9 @@ function localStorageFill() {
       formInput.value = data.github;
     }
   }
-}
+} */
 
-function localStorageImage() {
+/* function localStorageImage() {
   if (data.photo !== '') {
     profileImage.style.backgroundImage = `url(${data.photo})`;
     profilePreview.style.backgroundImage = `url(${data.photo})`;
@@ -63,4 +63,4 @@ function handleLocalStorage() {
   }
 }
 
-handleLocalStorage();
+handleLocalStorage(); */

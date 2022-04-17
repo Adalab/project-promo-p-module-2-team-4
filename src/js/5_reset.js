@@ -32,6 +32,16 @@ function resetPalettes() {
   previewContainerCard.classList.remove('palette-3');
 }
 
+function resetData() {
+  data.name !== '';
+  data.job !== '';
+  data.phone !== '';
+  data.email !== '';
+  data.linkedin !== '';
+  data.github !== '';
+  data.photo !== '';
+}
+
 // Función manejadora de reset
 function handleClickButtonReset() {
   // Reset de los inputs del formulario (incluyendo las paletas que vuelven al valor predeterminado asignando el atributo 'checked' a la paleta 1)
@@ -46,8 +56,11 @@ function handleClickButtonReset() {
   // Reset de las paletas
   resetPalettes();
 
+  // Reset de los datos
+  resetData();
+
   // Reset del Local Storage
-  localStorage.setItem('updatedData', JSON.stringify(data));
+  localStorage.clear('updatedData', JSON.stringify(data));
 }
 
 // Evento reset haciendo click en el botón reset

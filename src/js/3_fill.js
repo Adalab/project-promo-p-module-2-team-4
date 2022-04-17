@@ -92,7 +92,7 @@ function handleKeyupInputs(event) {
     data.github = inputUsed.value;
   }
 
-  //localStorage.setItem('localStorage', JSON.stringify(data));
+  // localStorage.setItem('dataKawaii', JSON.stringify(data));
 
   renderPreview();
 
