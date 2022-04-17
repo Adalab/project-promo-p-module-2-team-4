@@ -1,6 +1,5 @@
 'use strict';
-
-// VARIABLES
+// Variables
 const name = document.querySelector('.js_name');
 const job = document.querySelector('.js_job');
 const photo = document.querySelector('.js_photo');
@@ -20,10 +19,8 @@ function handleChangeFormFields(event) {
 
 form.addEventListener('change', handleChangeFormFields);
 
-
 function localStoragePalettes() {
   if (data.palette === parseInt(radioButton1.value)) {
-
     radioButton1.checked = true;
     radioButton2.checked = false;
     radioButton3.checked = false;
@@ -31,9 +28,7 @@ function localStoragePalettes() {
     previewContainerCard.classList.remove('palette-2');
     previewContainerCard.classList.remove('palette-3');
     previewContainerCard.classList.add('palette-1');
-
   } else if (data.palette === parseInt(radioButton2.value)) {
-
     radioButton2.checked = true;
     radioButton1.checked = false;
     radioButton3.checked = false;
@@ -41,9 +36,7 @@ function localStoragePalettes() {
     previewContainerCard.classList.remove('palette-1');
     previewContainerCard.classList.remove('palette-3');
     previewContainerCard.classList.add('palette-2');
-
   } else if (data.palette === parseInt(radioButton3.value)) {
-
     radioButton3.checked = true;
     radioButton2.checked = false;
     radioButton1.checked = false;
@@ -51,37 +44,28 @@ function localStoragePalettes() {
     previewContainerCard.classList.remove('palette-1');
     previewContainerCard.classList.remove('palette-2');
     previewContainerCard.classList.add('palette-3');
-
   }
 }
 
 // Función para que el contenido del LS se quede en los inputs
 function getFromLocalStorage() {
+  name.value = data.name;
+  job.value = data.job;
+  email.value = data.email;
+  phone.value = data.phone;
+  linkedin.value = data.linkedin;
+  github.value = data.github;
 
-    name.value = data.name;
-    job.value = data.job;
-    email.value = data.email;
-    phone.value = data.phone;
-    linkedin.value = data.linkedin;
-    github.value = data.github;
+  if (data.photo !== '') {
+    profileImage.style.backgroundImage = `url(${data.photo})`;
+    profilePreview.style.backgroundImage = `url(${data.photo})`;
+  }
 
-    if (data.photo !== '') {
-      profileImage.style.backgroundImage = `url(${data.photo})`;
-      profilePreview.style.backgroundImage = `url(${data.photo})`;
-    }
-
-    renderPreview();
-    localStoragePalettes();
-
-
+  renderPreview();
+  localStoragePalettes();
 }
 
-
-if(getInfo !== null) {
-
+if (getInfo !== null) {
   data = getInfo;
   getFromLocalStorage();
-
 }
-
-

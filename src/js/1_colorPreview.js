@@ -1,7 +1,6 @@
 'use strict';
-
-//CONSTANTES del PREVIEW.HTML
-//OPCIÓN DEFINITIVA PARA LAS PALETTES
+// Constantes del preview.html
+// Opción definitiva para las paletas
 const radioButton1 = document.querySelector('.js_radio-1');
 const radioButton2 = document.querySelector('.js_radio-2');
 const radioButton3 = document.querySelector('.js_radio-3');

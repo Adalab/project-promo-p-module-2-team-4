@@ -1,11 +1,9 @@
 'use strict';
-
 // Variables asociadas al botón reset
 const form = document.querySelector('.js_form');
 const resetButton = document.querySelector('.js_reset');
 
 // Funciones con una única acción
-
 function resetCardFields() {
   cardName.innerHTML = 'Nombre Apellidos';
   cardJob.innerHTML = 'Front-end developer';
@@ -42,7 +40,7 @@ function resetData() {
     linkedin: '',
     github: '',
     photo: '',
-  }
+  };
 }
 
 // Función manejadora de reset

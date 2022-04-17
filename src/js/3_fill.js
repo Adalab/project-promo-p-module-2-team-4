@@ -1,10 +1,4 @@
 'use strict';
-
-//VARIABLES
-
-// Esta constante está en las variables de Clara
-// const fill = document.querySelector('.js_fill');
-
 // Objeto que recoge los valores que escribimos en los inputs
 let data = {
   palette: 1,
@@ -18,8 +12,7 @@ let data = {
 };
 
 // Constantes de los elementos de la tarjeta
-
-// ¿se podría hacer sólo const cardName = document.querySelector('.js_cardName').innerHTML o .href porque es la única información del elemento que vamos a necesitar, no hace falta que nos traigamos todo del elemento?
+// ¿Se podría hacer sólo const cardName = document.querySelector('.js_cardName').innerHTML o .href porque es la única información del elemento que vamos a necesitar, no hace falta que nos traigamos todo del elemento?
 const cardName = document.querySelector('.js_cardName');
 const cardJob = document.querySelector('.js_cardJob');
 const cardPhone = document.querySelector('.js_cardPhone');
@@ -30,7 +23,6 @@ const cardImage = document.querySelector('.js__profile-image');
 const cardImagePrev = document.querySelector('.js__profile-preview');
 
 // Funciones con "una" acción
-
 function renderPreview() {
   // Esto es por si preferimos escribir el usuario de github con @
   /* const githubName = data.github;
@@ -74,7 +66,6 @@ function renderPreview() {
 }
 
 // Función manejadora
-
 function handleKeyupInputs(event) {
   const inputUsed = event.target;
 
@@ -113,5 +104,4 @@ function handleKeyupInputs(event) {
 }
 
 // Evento 'keyup'
-
 fill.addEventListener('keyup', handleKeyupInputs);

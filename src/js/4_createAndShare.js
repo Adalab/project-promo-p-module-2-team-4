@@ -1,12 +1,9 @@
 'use strict';
-
 // Variables de createCard
 const buttonCreateCard = document.querySelector('.js_buttonCreateCard');
 const containerDone = document.querySelector('.js_containerDone');
 
-
 // Funciones con "una" única acción
-
 function fetchCardLink() {
   fetch('//awesome-profile-cards.herokuapp.com/card', {
     method: 'POST',
@@ -15,7 +12,6 @@ function fetchCardLink() {
   })
     .then((response) => response.json())
     .then((result) => {
-
       containerDone.classList.remove('collapsed');
 
       // Crear <h2>
@@ -59,18 +55,18 @@ function fetchCardLink() {
 }
 
 function showErrorMsg() {
-
   containerDone.classList.remove('collapsed');
 
   // Crear <h2> error
-  const containerDoneTitle = document.createElement('h2');containerDoneTitle.classList.add('containerDone__title');
-  const containerDoneTitleContent = document.createTextNode('¡Ojo! Rellena todo el formulario');
+  const containerDoneTitle = document.createElement('h2');
+  containerDoneTitle.classList.add('containerDone__title');
+  const containerDoneTitleContent = document.createTextNode(
+    '¡Ojo! Rellena todo el formulario'
+  );
   containerDoneTitle.appendChild(containerDoneTitleContent);
 
   containerDone.appendChild(containerDoneTitle);
-
 }
-
 
 function validateFormFields() {
   if (
@@ -82,29 +78,20 @@ function validateFormFields() {
     data.github !== '' &&
     data.photo !== ''
   ) {
-
-    fetchCardLink();    
+    fetchCardLink();
     buttonCreateCard.classList.add('buttonCreateCard--sent');
     return true;
-
   } else {
-
     return false;
-
   }
 }
 
 function clickOnceButtonCreateCard() {
-  if(containerDone.innerHTML === '') {
-  
-    if(validateFormFields() === true) {
-
+  if (containerDone.innerHTML === '') {
+    if (validateFormFields() === true) {
       buttonCreateCard.disabled = true;
-
     } else {
-
       showErrorMsg();
-
     }
   }
 }
@@ -129,7 +116,6 @@ function handleClickButtonCreateCard(event) {
   event.preventDefault();
 
   clickOnceButtonCreateCard();
-
 }
 
 // Evento
