@@ -100,5 +100,9 @@
     align-items: center;
 
     cursor: pointer;
+
+    &__link {
+      color: $colorWhite;
+    }
   }
 }

@@ -53,8 +53,6 @@ function localStoragePalettes() {
   }
 }
 
-/* console.log(radioButton1.checked); */
-
 // Función para que el contenido del LS se quede en los inputs
 function getFromLocalStorage() {
   const getInfo = JSON.parse(localStorage.getItem('updatedData'));
