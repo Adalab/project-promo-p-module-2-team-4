@@ -49,7 +49,7 @@
               <p class="cardInfo__description js_cardJob">Front-end developer</p>
             </div>
 
-            <div class="cardImage"></div>
+            <div class="cardImage js__profile-image"></div>
 
             <nav>
               <ul class="cardMenu">
@@ -113,7 +113,14 @@
             <h2 class="containerDesign__title">Colores</h2>
             <div class="containerDesign__options">
               <div class="options__palette">
-                <input class="radio js_radio-1 js_radio" name="palette" type="radio" id="radio1" checked />
+                <input
+                  class="radio js_radio-1 js_radio"
+                  name="palette"
+                  type="radio"
+                  id="radio1"
+                  value="1"
+                  checked
+                />
 
                 <label for="radio1" class="palette__sample palette__sample--1"></label>
 
@@ -123,7 +130,13 @@
               </div>
 
               <div class="options__palette">
-                <input class="radio js_radio-2" name="palette" type="radio" id="radio2" />
+                <input
+                  class="radio js_radio-2"
+                  name="palette"
+                  type="radio"
+                  id="radio2"
+                  value="2"
+                />
 
                 <label for="radio2" class="palette__sample palette__sample--4"></label>
 
@@ -133,7 +146,13 @@
               </div>
 
               <div class="options__palette">
-                <input class="radio js_radio-3" name="palette" type="radio" id="radio3" />
+                <input
+                  class="radio js_radio-3"
+                  name="palette"
+                  type="radio"
+                  id="radio3"
+                  value="3"
+                />
 
                 <label for="radio3" class="palette__sample palette__sample--7"></label>
 
@@ -161,7 +180,7 @@
           <div class="containerFill js_fill collapsed">
             <label class="label" for="name">Nombre completo</label>
             <input
-              class="field"
+              class="field js_name"
               name="name"
               type="text"
               id="name"
@@ -170,7 +189,7 @@
 
             <label class="label" for="job">Puesto</label>
             <input
-              class="field"
+              class="field js_job"
               name="job"
               type="text"
               id="job"
@@ -180,17 +199,27 @@
             <label class="label" for="">Imagen de perfil</label>
             <div class="component">
               <!--Div temporal para maquetar estos dos items-->
-              <label class="component__btnAddImage" type="button" for="addPhoto"
+              <label
+                class="component__btnAddImage js__profile-trigger"
+                type="button"
+                for="addPhoto"
                 >Añadir imagen</label
               >
-              <!-- <input type="file" name="addPhoto" id="addPhoto" /> -->
+
               <!-- Este input es para las imagenes y tiene que estar oculto -->
-              <div class="component__square"></div>
+              <input
+                class="action__hiddenField js__profile-upload-btn js_photo"
+                type="file"
+                name="addPhoto"
+                id="addPhoto"
+              />
+
+              <div class="component__square js__profile-preview"></div>
             </div>
 
             <label class="label" for="email">E-mail</label>
             <input
-              class="field"
+              class="field js_email"
               name="email"
               type="email"
               id="email"
@@ -199,7 +228,7 @@
 
             <label class="label" for="phone">Teléfono</label>
             <input
-              class="field"
+              class="field js_phone"
               name="phone"
               type="tel"
               id="phone"
@@ -208,20 +237,20 @@
 
             <label class="label" for="linkedin">LinkedIn</label>
             <input
-              class="field"
+              class="field js_linkedin"
               name="linkedin"
               type="text"
               id="linkedin"
-              placeholder="P. ej. linkedin.com/in/sally.hill"
+              placeholder="P. ej. sally.hill"
             />
 
             <label class="label" for="github">GitHub</label>
             <input
-              class="field"
+              class="field js_github"
               name="github"
               type="text"
               id="github"
-              placeholder="P. ej. @sally-hill"
+              placeholder="P. ej. sally-hill"
             />
           </div>
 
@@ -245,16 +274,7 @@
               Crear tarjeta
             </button>
 
-            <div class="containerDone js_containerDone collapsed">
-              <h2 class="containerDone__title">La tarjeta ha sido creada</h2>
-              <!--Un título por definir número-->
-              <a href="" class="containerDone__link"
-                >https://awesome-profile-card.com?id=A456DF0001</a
-              >
-              <button class="buttonShare">
-                <i class="fa-brands fa-twitter"></i> Compartir en Twitter
-              </button>
-            </div>
+            <div class="containerDone js_containerDone collapsed"></div>
           </div>
 
         </fieldset>
