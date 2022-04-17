@@ -37,6 +37,7 @@
     &--3 {
       background-color: $colorHospitalGreen;
     }
+
     &--4 {
       background-color: $colorDriedBlood;
     }
@@ -46,6 +47,7 @@
     &--6 {
       background-color: $colorTomato;
     }
+
     &--7 {
       background-color: $colorSlate;
     }
@@ -54,6 +56,16 @@
     }
     &--9 {
       background-color: $colorLightGreyBlue;
+    }
+
+    &--10 {
+      background-color: $colorCyberGrape;
+    }
+    &--11 {
+      background-color: $colorMaximumBluePurple;
+    }
+    &--12 {
+      background-color: $colorMetallicPink;
     }
   }
 }

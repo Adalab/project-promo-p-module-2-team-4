@@ -28,6 +28,7 @@ function resetPalettes() {
   previewContainerCard.classList.add('palette-1');
   previewContainerCard.classList.remove('palette-2');
   previewContainerCard.classList.remove('palette-3');
+  previewContainerCard.classList.remove('palette-4');
 }
 
 function resetData() {
