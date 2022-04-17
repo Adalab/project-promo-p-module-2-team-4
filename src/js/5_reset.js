@@ -33,13 +33,16 @@ function resetPalettes() {
 }
 
 function resetData() {
-  data.name !== '';
-  data.job !== '';
-  data.phone !== '';
-  data.email !== '';
-  data.linkedin !== '';
-  data.github !== '';
-  data.photo !== '';
+  data = {
+    palette: 1,
+    name: '',
+    job: '',
+    email: '',
+    phone: '',
+    linkedin: '',
+    github: '',
+    photo: '',
+  }
 }
 
 // Función manejadora de reset
@@ -60,7 +63,7 @@ function handleClickButtonReset() {
   resetData();
 
   // Reset del Local Storage
-  localStorage.clear('updatedData', JSON.stringify(data));
+  localStorage.setItem('updatedData', JSON.stringify(data));
 }
 
 // Evento reset haciendo click en el botón reset
