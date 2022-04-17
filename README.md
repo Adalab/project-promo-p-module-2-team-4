@@ -56,10 +56,13 @@ Somos Paula, Gracia, Elena y Clara. Puedes encontrar nuestros perfiles de GitHub
 
 <p align="justify">
 Queremos agradecerte que hayas visitado nuestra página y nos hayas conocido un poco mejor. ¡No te olvides de seguirnos en GitHub para seguir en contacto! ¡Nos encantaría! <b>いいね!</b>
+</p>
+
+<p align="center">
+<img src="https://github.com/Adalab/project-promo-p-module-2-team-4/blob/main/src/images/Sora%20Yorimo%20T%C5%8Di%20Basho%20(by%20tomato%20omurice%20melon).jpg" />
+</p>
 
 <b>ありがとうございます</b> <i>Arigato gozaimasu!</i>
-
-</p>
 
 <h2 align="center"> バイバイ! :wave: </h2>
 
