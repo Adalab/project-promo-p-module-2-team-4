@@ -9,6 +9,8 @@ const phone = document.querySelector('.js_phone');
 const linkedin = document.querySelector('.js_linkedin');
 const github = document.querySelector('.js_github');
 
+const getInfo = JSON.parse(localStorage.getItem('updatedData'));
+
 // Función para guardar los datos (data) actualizado cada vez que realizamos un cambio (que puede ser clic fuera del input p. ej.)
 function handleChangeFormFields(event) {
   event.preventDefault();
@@ -55,25 +57,31 @@ function localStoragePalettes() {
 
 // Función para que el contenido del LS se quede en los inputs
 function getFromLocalStorage() {
-  const getInfo = JSON.parse(localStorage.getItem('updatedData'));
-   data = getInfo;
 
-  name.value = data.name;
-  job.value = data.job;
-  email.value = data.email;
-  phone.value = data.phone;
-  linkedin.value = data.linkedin;
-  github.value = data.github;
+    name.value = data.name;
+    job.value = data.job;
+    email.value = data.email;
+    phone.value = data.phone;
+    linkedin.value = data.linkedin;
+    github.value = data.github;
 
-  if (data.photo !== '') {
-    profileImage.style.backgroundImage = `url(${data.photo})`;
-    profilePreview.style.backgroundImage = `url(${data.photo})`;
-  }
+    if (data.photo !== '') {
+      profileImage.style.backgroundImage = `url(${data.photo})`;
+      profilePreview.style.backgroundImage = `url(${data.photo})`;
+    }
 
-  renderPreview();
-  localStoragePalettes();
-  
+    renderPreview();
+    localStoragePalettes();
+
+
 }
 
-getFromLocalStorage();
+
+if(getInfo !== null) {
+
+  data = getInfo;
+  getFromLocalStorage();
+
+}
+
 
