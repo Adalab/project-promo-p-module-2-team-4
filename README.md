@@ -67,7 +67,7 @@ Queremos agradecerte que hayas visitado nuestra página y nos hayas conocido un 
 <h2 align="center"> バイバイ! :wave: </h2>
 
 <p align="center">
-<img src="https://github.com/Adalab/project-promo-p-module-2-team-4/blob/main/src/images/kawaiiPC-logoSmall.png" />
+<img src="https://github.com/Adalab/project-promo-p-module-2-team-4/blob/main/src/images/kawaiiPC-logo-readme.png" />
 </p>
 
 ```
