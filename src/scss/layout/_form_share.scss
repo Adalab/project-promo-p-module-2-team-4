@@ -10,7 +10,7 @@
   align-items: center;
 
   .buttonCreateCard {
-    background-color: $colorDullOrange;
+    background-color: $colorMaximumBluePurple;
     border: none;
     border-radius: 12px;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
@@ -62,10 +62,9 @@
   align-items: center;
 
   &__title {
-
     margin-top: 30px;
 
-    color: $colorGunmetal;
+    color: $colorCyberGrape;
     font-size: 18px;
     font-weight: 600;
   }
@@ -73,7 +72,7 @@
   &__link {
     margin-top: 10px;
 
-    color: $colorDullOrange;
+    color: $colorBabyBlueEyes;
     font-size: 12px;
     font-weight: 600;
   }

@@ -28,8 +28,9 @@
   margin-top: 35px;
   font-family: $fontSection;
   font-size: 19px;
-  color: $colorDullOrange;
+  color: $colorMetallicPink;
 }
+
 .landing__text {
   max-width: 40ch;
   margin-bottom: 18px;
@@ -37,7 +38,7 @@
   font-size: 13px;
   line-height: normal;
   text-align: center;
-  color: $colorDarkGreenBlue;
+  color: $colorCyberGrape;
 }
 
 .containerLanding {
@@ -64,7 +65,7 @@
 
   width: 32px;
   height: 26px;
-  color: $colorDullOrange;
+  color: $colorMetallicPink;
   text-align: center;
 
   font-size: 22px;
@@ -76,7 +77,7 @@
   font-size: 13px;
   line-height: normal;
   text-align: center;
-  color: $colorGunmetal;
+  color: $colorCyberGrape;
 }
 
 .landing__button {
@@ -88,19 +89,19 @@
   align-items: center;
   text-transform: uppercase;
   border-radius: 21px;
-  background-color: $colorDirtyBlue;
+  background-color: $colorMaximumBluePurple;
   color: $colorWhite;
   font-family: $fontMain;
   font-size: 16px;
   font-weight: 600;
 }
 
-//button transition
+// Button transition
 .landing__button {
-  box-shadow: inset 0 0 20px $colorDarkGreenBlue;
+  box-shadow: inset 0 0 20px $colorMaximumBluePurple;
   transition: all 1s ease;
   &:hover {
     background-color: $colorWhite;
-    color: $colorDirtyBlue;
+    color: $colorMaximumBluePurple;
   }
 }

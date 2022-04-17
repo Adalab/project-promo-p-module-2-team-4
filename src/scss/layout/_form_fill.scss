@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   margin: 20px 0 10px;
-  color: $colorDarkGreenBlue;
+  color: $colorCyberGrape;
   font-family: $fontMain;
   font-size: 14px;
 }
@@ -15,9 +15,9 @@
   margin-bottom: 20px;
   height: 30px;
   font-size: 14px;
-  border: 1px solid $colorHospitalGreen;
+  border: 1px solid $colorBabyBlueEyes;
   padding-left: 10px;
-  color: $colorDarkGreenBlue;
+  color: $colorCyberGrape;
 
   //dar otro color de borde cuando escribes en el field:
   // &:focus {
@@ -32,7 +32,7 @@
 
   &__btnAddImage {
     display: flex;
-    background-color: $colorDullOrange;
+    background-color: $colorMaximumBluePurple;
     color: $colorWhite;
     border-radius: 3px;
     align-items: center;
@@ -46,7 +46,7 @@
   &__square {
     width: 30px;
     height: 30px;
-    border: 1px solid $colorHospitalGreen;
+    border: 1px solid $colorBabyBlueEyes;
     background-size: cover;
     background-position: center;
   }
@@ -85,13 +85,15 @@
   display: flex;
   justify-content: center;
 }
+
 .profile__image,
 .profile__preview {
   background-position: center;
-  backrgound-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   border: 1px solid #ccc;
 }
+
 .profile__image {
   width: 300px;
   height: 300px;
