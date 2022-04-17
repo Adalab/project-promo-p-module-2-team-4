@@ -19,14 +19,47 @@ function handleChangeFormFields(event) {
 form.addEventListener('change', handleChangeFormFields);
 
 
+function localStoragePalettes() {
+  if (data.palette === parseInt(radioButton1.value)) {
 
+    radioButton1.checked = true;
+    radioButton2.checked = false;
+    radioButton3.checked = false;
+
+    previewContainerCard.classList.remove('palette-2');
+    previewContainerCard.classList.remove('palette-3');
+    previewContainerCard.classList.add('palette-1');
+
+  } else if (data.palette === parseInt(radioButton2.value)) {
+
+    radioButton2.checked = true;
+    radioButton1.checked = false;
+    radioButton3.checked = false;
+
+    previewContainerCard.classList.remove('palette-1');
+    previewContainerCard.classList.remove('palette-3');
+    previewContainerCard.classList.add('palette-2');
+
+  } else if (data.palette === parseInt(radioButton3.value)) {
+
+    radioButton3.checked = true;
+    radioButton2.checked = false;
+    radioButton1.checked = false;
+
+    previewContainerCard.classList.remove('palette-1');
+    previewContainerCard.classList.remove('palette-2');
+    previewContainerCard.classList.add('palette-3');
+
+  }
+}
+
+/* console.log(radioButton1.checked); */
 
 // Función para que el contenido del LS se quede en los inputs
 function getFromLocalStorage() {
   const getInfo = JSON.parse(localStorage.getItem('updatedData'));
    data = getInfo;
 
-  name.value = data.name;
   name.value = data.name;
   job.value = data.job;
   email.value = data.email;
@@ -40,6 +73,7 @@ function getFromLocalStorage() {
   }
 
   renderPreview();
+  localStoragePalettes();
   
 }
 

@@ -1,6 +1,6 @@
 'use strict';
 // Nueva constante para poder hacer un querySelectorALL del formulario (la otra que teníamos era un querySelector nada más):
-const formLC = document.querySelectorAll('.js_form');
+//const formLC = document.querySelectorAll('.js_form');
 
 /* function localStoragePalettes() {
   if ((radioButton1.checked = true)) {
