@@ -1,5 +1,9 @@
 <h1 align="center">¡Este es el proyecto :star2: <b>可愛い</b> PROFILE-CARDS! :star2: </h1>
 
+<p align="center">
+<img src="https://github.com/Adalab/project-promo-p-module-2-team-4/blob/main/src/images/kawaiiPC-logo-readme.png" />
+</p>
+
 <h2 align="center">Creado con mucho :heart: 心! por el equipo 4 durante el módulo 2 en <a href="https://adalab.es/" target="_blank">Adalab</a></h2>
 
 ### ¿En qué consiste este ejercicio?
@@ -65,10 +69,6 @@ Queremos agradecerte que hayas visitado nuestra página y nos hayas conocido un 
 <b>ありがとうございます</b> <i>Arigato gozaimasu!</i>
 
 <h2 align="center"> バイバイ! :wave: </h2>
-
-<p align="center">
-<img src="https://github.com/Adalab/project-promo-p-module-2-team-4/blob/main/src/images/kawaiiPC-logo-readme.png" />
-</p>
 
 ```
 Kawaii profile-cards | 2022
