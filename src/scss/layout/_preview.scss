@@ -136,4 +136,20 @@
   .cardMenu__link {
     color: $colorSlate;
   }
+
+.preview .palette-4 {
+  .cardInfo {
+    border-left: solid 5px $colorCyberGrape;
+  }
+  .cardInfo .cardInfo__name {
+    color: $colorMaximumBluePurple;
+  }
+  .cardMenu__icon {
+    border: solid 2px $colorMetallicPink;
+  }
+  .cardMenu__link {
+    color: $colorMaximumBluePurple;
+  }
+}
+
 }
