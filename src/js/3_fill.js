@@ -68,9 +68,13 @@ function renderPreview() {
 // Función manejadora
 function handleKeyupInputs(event) {
   const inputUsed = event.target;
-
+/*
   if (inputUsed.id === 'name') {
-    data.name = inputUsed.value;
+    // data.name = inputUsed.value;
+
+    const ivanico = 'name';
+
+    data[ivanico] = inputUsed.value;
   } else if (inputUsed.id === 'job') {
     data.job = inputUsed.value;
   } else if (inputUsed.id === 'email') {
@@ -82,6 +86,9 @@ function handleKeyupInputs(event) {
   } else if (inputUsed.id === 'github') {
     data.github = inputUsed.value;
   }
+  */
+
+  data[inputUsed.id] = inputUsed.value;
 
   // localStorage.setItem('dataKawaii', JSON.stringify(data));
 
@@ -89,6 +96,11 @@ function handleKeyupInputs(event) {
 
   /* containerDone.classList.add('collapsed'); */
 
+  checkFieldsCompleted();
+
+}
+
+function checkFieldsCompleted() {
   if (
     data.name !== '' &&
     data.job !== '' &&
