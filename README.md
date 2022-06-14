@@ -50,7 +50,7 @@ Puedes ver el resultado haciendo clic <a href="https://beta.adalab.es/project-pr
 
 Somos Paula, Gracia, Elena y Clara. Puedes encontrar nuestros perfiles de GitHub a continuación:
 
-:purple_heart: [![Autor](https://img.shields.io/badge/GitHub-Clara%20Miranda%20Zapata-blueviolet?style=flat&logo=github)](https://github.com/miranda-zapata)
+:purple_heart: [![Autor](https://img.shields.io/badge/GitHub-Clara%20Miranda%20Zapata-blueviolet?style=flat&logo=github)](https://github.com/claraMirandaZ)
 
 :blue_heart: [![Autor](https://img.shields.io/badge/GitHub-Elena%20Palomar%20Llorente-blue?style=flat&logo=github)](https://github.com/ElenaPal)
 
